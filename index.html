@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Meu site completo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="menu-toggle">&#9776;</div>
+			<ul class="nav-links">
+				<li><a href="#sobre">Sobre</li>				
+				<li><a href="#galeria">Galeria</li>
+				<li><a href="#contacto">Contacto</li>
+			</ul>
+	</nav>
+	<section id="sobre">
+		<h1>Bem-vindo ao meu site</h1>
+		<p>Este é um site criado com HTML e CSS. Aqui aprendes a programar páginas web do zero</p>
+	</section>
+
+
+    <!-- Galeria de Imagens -->
+    <section id="galeria">
+    	<h2>Galeria de Imagens</h2>
+    	<div class="grid-container">
+			<div class="item"><img src="5.png" alt="🖼️ 1" height="90%" width="90%"></div>
+			<div class="item"><img src="6.png" alt="🖼️ 2" height="90%" width="90%"></div>
+			<div class="item"><img src="7.jpg" alt="🖼️ 3" height="90%" width="90%"></div>
+			<div class="item"><img src="8.jpg" alt="🖼️ 4" height="90%" width="90%"></div>
+    	</div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+    	<p>&copy; 2025 Meu site. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para o Menu -->
+    <script>
+    	document.querySelector(".menu-toggle").addEventListener("click", function(){
+    		document.querySelector(".nav-links").classList.toggle("active");
+    	})
+    </script>
+</body>
+</html>
